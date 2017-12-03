@@ -68,29 +68,6 @@ int star2(std::vector<int> v) {
     return total;
 }
 
-    /*
-    int rows = sizeof(testInput3)/sizeof(testInput3[0]);
-    int cols = sizeof(testInput3[0])/sizeof(int);
-    printf("%d rows, %d cols\n", rows, cols);
-    int total = 0;
-    for (int rowIndex = 0; rowIndex < rows; ++rowIndex) {
-        std::vector<int> v(testInput3[rowIndex], testInput3[rowIndex] + cols);
-        std::sort(v.begin(), v.end());
-        printf("Row %d\n", rowIndex);
-        for (std::vector<int>::iterator lowest = v.begin(); lowest != std::prev(v.end()); ++lowest) {
-            for (std::vector<int>::iterator runner = std::next(lowest); runner != v.end(); ++runner) {
-                if ((*runner % *lowest) == 0) {
-                    printf("%d/%d\n", *runner, *lowest);
-                    total += (*runner/(*lowest));
-                }
-            }
-        }
-        //int max = *std::max_element(testInput3[rowIndex], testInput3[rowIndex]+cols);
-        //int min = *std::min_element(testInput3[rowIndex], testInput3[rowIndex]+cols);
-        //total += (max-min);
-    }
-    printf("Checksum %d\n", total);
-    */
 int main(int argc, char** argv) {
     int rows = sizeof(testInput2)/sizeof(testInput2[0]);
     int cols = sizeof(testInput2[0])/sizeof(int);
